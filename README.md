@@ -55,14 +55,9 @@ The page open on http://localhost:3000
 
 Branches should be lower case only. Dash for space (kebab-case). Prefixed by type / short descriptive name.
 
-Possible types
-
-- **feat**: New features or functionality
-- **fix**: Fixes
-
 Example:
 `fix/button-component`
-`feat/add-favorites`
+`feature/add-favorites`
 
 # Pull Requests names and commit messages
 
