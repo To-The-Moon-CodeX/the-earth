@@ -50,7 +50,7 @@ First, run the development server:
 yarn dev
 ```
 
-And the Expo Developer Tool at http://localhost:3000
+The Page Open On http://localhost:3000
 
 
 
