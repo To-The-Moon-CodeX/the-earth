@@ -6,7 +6,7 @@
 
 # Documentation
 
----
+
 
 # Technologies
 
@@ -15,7 +15,7 @@
 - [Next.js](https://nextjs.org/)
 
 # Local Development
----
+
 
 ## Getting Started
 
