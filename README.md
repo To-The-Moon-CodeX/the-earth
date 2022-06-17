@@ -1,12 +1,12 @@
 # Front-end
 
----
+
 
 ### ----Purpose and description  here----
 
 # Documentation
 
----
+
 
 # Technologies
 
@@ -14,10 +14,8 @@
 - [React.js](https://reactjs.org/)
 - [Next.js](https://nextjs.org/)
 
-# Local Development
----
 
-## Getting Started
+# Getting Started
 
 ## Check the project structure
 
@@ -50,46 +48,16 @@ First, run the development server:
 yarn dev
 ```
 
-And the Expo Developer Tool at http://localhost:3000
+The page open on http://localhost:3000
 
-
-
-# Naming Conventions
-
-Case types:
-
-- kebab-case
-- camelCase
-- PascalCase
-- snake_case
-
-# Pages
-
-- PascalCase
-
-# Components
-
-- Component name should be PascalCase
-- Component property names should be camelCase
-  - Use 'on' prefix for event handlers. Example 'onClick' (corresponding function should be called 'handleClick')
-
-# Functions
-
-- camelCase
-- functions that are event handlers should use the 'handle' prefix. Example: 'handleClick' (for handling the onClick event)
 
 # Branch names
 
 Branches should be lower case only. Dash for space (kebab-case). Prefixed by type / short descriptive name.
 
-Possible types
-
-- **feat**: New features or functionality
-- **fix**: Fixes
-
 Example:
 `fix/button-component`
-`feat/add-favorites`
+`feature/add-favorites`
 
 # Pull Requests names and commit messages
 
@@ -99,7 +67,7 @@ Example:
 `fix[24]: [description]`
 
 Example without issue number:
-`feat: [description]`
+`feature: [description]`
 
 
 
