@@ -21,12 +21,12 @@
 
 ### Design pattern
 * components: Custom components like buttons, textinputs 
-* containers/features: features like sign up or sign in
+* containers/features: Features like sign up or sign in
 * containers/frameworks: Navigation bar, centerer
 * helpers: Reusable functions
 * hooks: Custom hooks
-* services: communication with API
-* views: main views
+* services: Communication with API
+* pages: main screens
 
 
 ### Clone the project 
