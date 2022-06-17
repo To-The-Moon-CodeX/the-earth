@@ -14,10 +14,8 @@
 - [React.js](https://reactjs.org/)
 - [Next.js](https://nextjs.org/)
 
-# Local Development
 
-
-## Getting Started
+# Getting Started
 
 ## Check the project structure
 
