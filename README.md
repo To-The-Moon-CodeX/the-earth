@@ -67,7 +67,7 @@ Example:
 `fix[24]: [description]`
 
 Example without issue number:
-`feat: [description]`
+`feature: [description]`
 
 
 
