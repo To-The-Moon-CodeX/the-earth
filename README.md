@@ -48,7 +48,7 @@ First, run the development server:
 yarn dev
 ```
 
-The Page Open On http://localhost:3000
+The page open on http://localhost:3000
 
 
 # Branch names
