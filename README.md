@@ -53,31 +53,6 @@ yarn dev
 The Page Open On http://localhost:3000
 
 
-
-# Naming Conventions
-
-Case types:
-
-- kebab-case
-- camelCase
-- PascalCase
-- snake_case
-
-# Pages
-
-- PascalCase
-
-# Components
-
-- Component name should be PascalCase
-- Component property names should be camelCase
-  - Use 'on' prefix for event handlers. Example 'onClick' (corresponding function should be called 'handleClick')
-
-# Functions
-
-- camelCase
-- functions that are event handlers should use the 'handle' prefix. Example: 'handleClick' (for handling the onClick event)
-
 # Branch names
 
 Branches should be lower case only. Dash for space (kebab-case). Prefixed by type / short descriptive name.
