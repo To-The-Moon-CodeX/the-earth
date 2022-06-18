@@ -9,13 +9,11 @@ import { TransactionHistory } from "./TransactionHistory";
 export const Dashboard = () => {
   const router = useRouter();
   return (
-    /*
     <section className={styles.dashboardC}>
       <div className={styles.dashboardCardItem}>
         <AddressInfo />
       </div>
       <div className={styles.dashboardCardItem}>
-        <p>tests</p>
         <AddressTransactions />
       </div>
       <div className={styles.dashboardCardItem}>
@@ -25,13 +23,12 @@ export const Dashboard = () => {
         <h1 className={styles.cardHeader}>Payment Value Options</h1>
         <SendEthereum />
       </div>
-      </section>
-      */
       <div className={styles.dashboardCardItem}>
         <div className={styles.balance}>
           <AddressTransactions />
         </div>
       </div>
+    </section>
   );
 };
 /*
