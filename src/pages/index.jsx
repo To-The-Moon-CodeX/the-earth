@@ -1,6 +1,8 @@
 import Head from "next/head";
 import { Button } from "../components";
 
+import { MetamaskLogin } from "../components/MetamaskLogin";
+
 export default function Home() {
   return (
     <div>
@@ -11,6 +13,7 @@ export default function Home() {
       </Head>
 
       <Button onClick={() => console.log("click me")} text="click me" />
+      <MetamaskLogin></MetamaskLogin>
     </div>
   );
 }
