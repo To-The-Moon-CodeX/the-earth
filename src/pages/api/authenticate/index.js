@@ -1,7 +1,6 @@
 import { ThirdwebSDK } from "@thirdweb-dev/sdk";
 
-
-const authenticate = async (req, res) => {
+async function handler(req, res) {
   if (req.method !== "POST") {
     return res.status(400).json({
       error: "Invalid method. Only POST supported.",
@@ -34,6 +33,6 @@ const authenticate = async (req, res) => {
   const address = await sdk.auth.authenticate(domain, token);
 
   res.status(200).json(address);
-};
+}
 
-export default authenticate;
+export default handler;
