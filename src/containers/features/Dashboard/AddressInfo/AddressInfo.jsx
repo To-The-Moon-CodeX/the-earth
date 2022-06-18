@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 
 export const AddressInfo = () => {
   const [data, setData] = useState(null);
+  console.log("🚀 ~ file: AddressInfo.jsx ~ line 6 ~ AddressInfo ~ data", data)
   const [isLoading, setLoading] = useState(false);
 
   useEffect(() => {
