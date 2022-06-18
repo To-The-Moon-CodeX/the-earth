@@ -1,6 +1,5 @@
-import { ContractInterceptor } from "@thirdweb-dev/sdk";
-import { ethers } from "ethers";
 import React, { useEffect, useState } from "react";
+import { ethers } from "ethers";
 
 
 export const SendEthereum = () => {

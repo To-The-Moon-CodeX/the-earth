@@ -1,6 +1,5 @@
 import Head from "next/head";
 import React from "react";
-import { SendEthereum } from "../../components/SendEthereum";
 import { Dashboard } from "../../containers";
 
 const DashboardPage = () => {
@@ -12,7 +11,6 @@ const DashboardPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Dashboard />
-      <SendEthereum></SendEthereum>
     </div>
   );
 };
