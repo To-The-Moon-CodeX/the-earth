@@ -1,13 +1,12 @@
-
 import React, { useEffect, useState } from "react";
 
-export const AddressInfo = () => {
+export const AddressTransactions = () => {
   const [data, setData] = useState(null);
   const [isLoading, setLoading] = useState(false);
 
   useEffect(() => {
     setLoading(true);
-    fetch("/api/getaddressinfo")
+    fetch("/api/getaddresstransactions")
       .then((res) => res.json())
       .then((data) => {
         setData(data);
@@ -20,8 +19,10 @@ export const AddressInfo = () => {
 
   return (
     <div>
-      <p>{data.result}</p>
-      {/* <p>{data.bio}</p> */}
+      {data.result.map((nums, index) => (
+        <li key={index}>    {nums.hash}
+                </li>
+      ))}
     </div>
   );
-}
+  }
