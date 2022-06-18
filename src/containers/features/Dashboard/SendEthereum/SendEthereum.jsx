@@ -35,9 +35,6 @@ export const SendEthereum = () => {
     try {
 
     //   First, I need to check if the ethereum chain is Goerli, the correct one.
-
-
-
       if (window.ethereum) {
 
         let ethereum = window.ethereum;

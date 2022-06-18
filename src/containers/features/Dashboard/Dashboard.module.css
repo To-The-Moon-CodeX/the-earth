@@ -1,9 +1,8 @@
 .dashboardC {
-  background-image: url("../../../../public/background.png");
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
-  padding: 3rem 3rem;
+  padding: 20px 20px;
 }
 
 .dashboardCardItem {
@@ -23,13 +22,12 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
-
 }
 
 @media screen and (max-width: 800px) {
   .dashboardC {
     grid-template-columns: 1fr;
     grid-gap: 2rem;
-    padding: 3rem 3rem;
+    padding: 40px 40px;
   }
 }

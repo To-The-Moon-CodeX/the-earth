@@ -27,12 +27,12 @@ export default function useAuthenticate() {
   const domain = "localhost";
   const router = useRouter();
   
-  useEffect(() => {
-    if (localStorage.getItem("user_token")) {
-      router.push("/dashboard");
-      setUser(true);
-    }
-  }, [router]);
+  // useEffect(() => {
+  //   if (localStorage.getItem("user_token")) {
+  //     router.push("/dashboard");
+  //     setUser(true);
+  //   }
+  // }, [router]);
 
 
   const login = async () => {

@@ -1,4 +1,6 @@
 .container{
-  height: 95vh;
+  min-height: 95vh;
   background-image: url("../../public/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }

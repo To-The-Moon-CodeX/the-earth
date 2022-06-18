@@ -4,10 +4,6 @@ import Image from "next/image";
 
 export const AddressTransactions = () => {
   const [data, setData] = useState(null);
-  console.log(
-    "🚀 ~ file: AddressTransactions.jsx ~ line 5 ~ AddressTransactions ~ data",
-    data
-  );
   const [isLoading, setLoading] = useState(false);
 
   useEffect(() => {

@@ -1,13 +1,11 @@
 import React from "react";
 import styles from "./Dashboard.module.css";
-import { useRouter } from "next/router";
 import { AddressInfo } from "./AddressInfo";
 import { AddressTransactions } from "./AddressTransactions";
 import { SendEthereum } from "./SendEthereum";
 import { TransactionHistory } from "./TransactionHistory";
 
 export const Dashboard = () => {
-  const router = useRouter();
   return (
     <section className={styles.dashboardC}>
       <div className={styles.dashboardCardItem}>
@@ -26,4 +24,3 @@ export const Dashboard = () => {
     </section>
   );
 };
-

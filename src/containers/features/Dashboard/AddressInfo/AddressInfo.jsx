@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import styles from "./AddressInfo.module.css"
 export const AddressInfo = () => {
   const [data, setData] = useState(null);
-  console.log("🚀 ~ file: AddressInfo.jsx ~ line 6 ~ AddressInfo ~ data", data);
   const [isLoading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -20,8 +19,8 @@ export const AddressInfo = () => {
 
   return (
     <div className={styles.container}>
-      <p className={styles.item}>{data.result}</p>
-      <p className={styles.item}>{data.result}</p>
+      <p className={styles.item}>Address</p>
+      <p className={styles.item}>Crypto</p>
       <p className={styles.item}>{data.result}</p>
 
       {/* <p>{data.bio}</p> */}
