@@ -1,17 +1,21 @@
-.dashboard__container {
+.dashboardC {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
 
-.dashboard__container > div {
-  background: var(--color-bg);
+.dashboardC > div {
+  background: rgba(212, 130, 130, 0.51);
   padding: 2.4rem 5rem;
   border-radius: 2rem;
   border: 1px solid transparent;
 }
 
-.test {
-  color: black !important;
-  background-color: red;
+.text {
+  color: black;
+}
+
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
 }

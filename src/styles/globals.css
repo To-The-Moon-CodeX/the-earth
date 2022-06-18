@@ -17,12 +17,3 @@ a {
   box-sizing: border-box;
   color: white;
 }
-
-:root {
-  --color-bg: rgba(255, 255, 255, 0.51)
-}
-
-.container {
-  width: var(--container-width-lg);
-  margin: 0 auto;
-}

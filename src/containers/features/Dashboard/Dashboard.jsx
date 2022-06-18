@@ -5,12 +5,19 @@ import styles from "./Dashboard.module.css";
 export const Dashboard = () => {
   const router = useRouter();
   return (
-    <p className={styles.test}>testssssssssssssssssssssssssssssssssss</p>
-    /*<section id="dashboard">
-      <div className="container dashboard__container">
-
+    <section className={styles.dashboardC}>
+      <div className={styles.container}>
+      <p className={styles.text}>testssssssssssssssssssssssssssssssssss</p>
+      </div>
+      <div className={styles.container}>
+        <p className={styles.text}>testssssssssssssssssssssssssssssssssss</p>
+      </div>
+      <div className={styles.container}>
+        <p className={styles.text}>testssssssssssssssssssssssssssssssssss</p>
+      </div>
+      <div className={styles.container}>
+        <p className={styles.text}>testssssssssssssssssssssssssssssssssss</p>
       </div>
     </section>
-    */
   )
 };
