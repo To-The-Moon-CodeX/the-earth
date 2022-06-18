@@ -34,7 +34,7 @@ export const AddressTransactions = () => {
           <h1>135.01$</h1>
           <div>
             <div className={styles.balanceContentsBottom}>
-              <div>
+              <div className={styles.texts}>
                 <h4>135.01 USDT</h4>
                 <h4>Address: 3kU...0wH</h4>
               </div>

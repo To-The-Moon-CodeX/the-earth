@@ -25,14 +25,14 @@
   padding: 10px;
 }
 
+.texts > h4 {
+  color: rgb(250, 250, 250);
+}
+
 .balanceContentsTop > h1 {
   color: white;
 }
 
 .balanceContentsTop > h3 {
-  color: white;
-}
-
-.balanceContentsBottom > h4 {
   color: white;
 }
