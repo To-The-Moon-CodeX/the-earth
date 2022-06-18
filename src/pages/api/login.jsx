@@ -18,7 +18,7 @@ const login = async (req,res) => {
 
   const sdk = ThirdwebSDK.fromPrivateKey(
     process.env.ADMIN_PRIVATE_KEY,
-    "mainnet"
+    "goerli"
   );
 
   // Get signed login payload from the frontend

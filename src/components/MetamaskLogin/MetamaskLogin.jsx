@@ -1,13 +1,18 @@
 
 import useAuthenticate from "../../hooks/useAuthenticate";
-import { useAddress, useDisconnect, useMetamask } from "@thirdweb-dev/react";
+import { useAddress, useBalance, useDisconnect, useMetamask } from "@thirdweb-dev/react";
 import { useState } from "react";
+
+import { ethers } from "ethers";
+
+
 export const MetamaskLogin = () => {
    const address = useAddress();
    const disconnect = useDisconnect();
    const connectWithMetamask = useMetamask();
    const { login, authenticate, logout } = useAuthenticate();
 
+    
    const [isLoggedIn, setIsLoggedIn] = useState(false);
    const [authMessage, setAuthMessage] = useState("N/A");
 
@@ -37,6 +42,7 @@ export const MetamaskLogin = () => {
      setIsLoggedIn(false);
      setAuthMessage("N/A");
    };
+
 
    return (
      <div>

@@ -3,6 +3,8 @@ import { Button } from "../components";
 
 import { MetamaskLogin } from "../components/MetamaskLogin";
 
+import { AddressInfo } from "../components/AddressInfo";
+
 export default function Home() {
   return (
     <div>
@@ -14,6 +16,7 @@ export default function Home() {
 
       <Button onClick={() => console.log("click me")} text="click me" />
       <MetamaskLogin></MetamaskLogin>
+      <AddressInfo></AddressInfo>
     </div>
   );
 }

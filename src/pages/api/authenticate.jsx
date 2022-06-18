@@ -26,7 +26,7 @@ const authenticate = async (req, res) => {
 
   const sdk = ThirdwebSDK.fromPrivateKey(
     process.env.ADMIN_PRIVATE_KEY,
-    "mainnet"
+    "goerli"
   );
 
   // Authenticate token with the SDK
