@@ -20,9 +20,8 @@ export const AddressTransactions = () => {
   return (
     <div>
       {data.result.map((nums, index) => (
-        <li key={index}>    {nums.hash}
-                </li>
+        <li key={index}> {nums.hash}</li>
       ))}
     </div>
   );
-  }
+};

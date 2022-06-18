@@ -1,9 +1,8 @@
-
-import useAuthenticate from "../../hooks/useAuthenticate";
 import { useAddress, useBalance, useDisconnect, useMetamask } from "@thirdweb-dev/react";
 import { useState } from "react";
 
 import { ethers } from "ethers";
+import useAuthenticate from "../../../../hooks/useAuthenticate";
 
 
 export const MetamaskLogin = () => {

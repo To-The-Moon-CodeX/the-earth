@@ -32,18 +32,18 @@ async function handler(req, res) {
   // Generate an access token with the SDK using the signed payload
   const domain = "localhost";
   const token = await sdk.auth.generate(domain, payload);
+  console.log("🚀 ~ file: index.js ~ line 35 ~ handler ~ token", token);
 
   // Securely set httpOnly cookie on request to prevent XSS on frontend
-  res.setHeader(
-    "Set-Cookie",
-    serialize("access_token", token, {
-      httpOnly: true,
-      secure: true,
-      sameSite: "strict",
-    })
-  );
-
-  res.status(200).json("Successfully logged in.");
+  // res.setHeader(
+  //   "Set-Cookie",
+  //   serialize("access_token", token, {
+  //     httpOnly: true,
+  //     secure: true,
+  //     sameSite: "strict",
+  //   })
+  // );
+  res.status(200).json({ message: token });
 }
 
 export default handler;
