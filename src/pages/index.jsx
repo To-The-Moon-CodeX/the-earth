@@ -7,6 +7,8 @@ import { AddressInfo } from "../components/AddressInfo";
 
 import { AddressTransactions } from "../components/AddressTransactions";
 
+import { SendEthereum } from "../components/SendEthereum";
+
 export default function Home() {
   return (
     <div>
@@ -21,6 +23,8 @@ export default function Home() {
       <AddressInfo></AddressInfo>
 
       <AddressTransactions></AddressTransactions>
+
+      <SendEthereum></SendEthereum>
       
     </div>
   );
