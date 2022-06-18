@@ -11,7 +11,7 @@
   border: 1px solid transparent;
 }
 
-.test {
-  color: black !important;
+.test{
+  color: black;
   background-color: red;
 }
