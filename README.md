@@ -17,17 +17,6 @@
 
 # Getting Started
 
-## Check the project structure
-
-### Design pattern
-* components: Custom components like buttons, textinputs 
-* containers/features: Features like sign up or sign in
-* containers/frameworks: Navigation bar, centerer
-* helpers: Reusable functions
-* hooks: Custom hooks
-* services: Communication with API
-* pages: main screens
-
 
 ### Clone the project 
 
@@ -50,10 +39,18 @@ yarn dev
 
 The page open on http://localhost:3000
 
+## Check the project structure
+
+### Design pattern
+* components: Custom components like buttons, textinputs 
+* containers/features: Features like sign up or sign in
+* containers/frameworks: Navigation bar, centerer
+* helpers: Reusable functions
+* hooks: Custom hooks
+* services: Communication with API
+* pages: main screens
 
 # Branch names
-
-Branches should be lower case only. Dash for space (kebab-case). Prefixed by type / short descriptive name.
 
 Example:
 `fix/button-component`
@@ -61,7 +58,6 @@ Example:
 
 # Pull Requests names and commit messages
 
-Should include type, short name. Spaces in description are ok.
 
 Example:
 `fix[24]: [description]`
