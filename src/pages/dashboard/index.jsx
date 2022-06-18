@@ -1,6 +1,7 @@
-import Head from "next/head";
 import React from "react";
+import Head from "next/head";
 import { Dashboard } from "../../containers";
+import styles from "../../styles/Dashboard.module.css";
 
 const DashboardPage = () => {
   return (
