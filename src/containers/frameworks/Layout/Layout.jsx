@@ -4,8 +4,8 @@ export const Layout = (props) => {
   return (
     <React.Fragment>
       <Navigation />
-      <hr />
-       <main>{props.children}</main>
+      <hr style={{ marginBottom: 0 }} />
+      <main>{props.children}</main>
     </React.Fragment>
   );
 };
