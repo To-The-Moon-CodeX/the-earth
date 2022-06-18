@@ -1,0 +1,29 @@
+.binanceButton {
+  background-color: #d59c14;
+  padding: 10px 30px;
+  width: 18.75rem;
+  border-radius: 20px;
+  border: none;
+}
+
+.coinbaseButton {
+  background-color: white;
+  padding: 10px 30px;
+  width: 18.75rem;
+  border-radius: 20px;
+  border: none;
+}
+.metamaskButton {
+  background-color: #f4841f;
+  padding: 10px 30px;
+  width: 18.75rem;
+  border-radius: 20px;
+  border: none;
+}
+.connectWalletButton {
+  background-color: none;
+  padding: 10px 30px;
+  width: 18.75rem;
+  border-radius: 20px;
+  border: none;
+}
