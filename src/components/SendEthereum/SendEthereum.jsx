@@ -1,8 +1,29 @@
+import { ContractInterceptor } from "@thirdweb-dev/sdk";
 import { ethers } from "ethers";
 import React, { useEffect, useState } from "react";
 
 
 export const SendEthereum = () => {
+
+    const [transactionId, setTransactionId] = useState(null);
+    
+    //Goerli test net chain
+    const chainUsed = 5;
+
+
+    async function checkChainIsCorrect() {
+      const chainToHex = ethers.utils.hexValue(chainUsed);
+
+      return await window.ethereum.request({
+        method: "wallet_switchEthereumChain",
+        params: [
+          {
+            chainId: chainToHex,
+          },
+        ],
+      });
+    }
+
   /**
    *
    * Send ethereum to our bot account.
@@ -12,21 +33,29 @@ export const SendEthereum = () => {
 
   async function sendButton(_quantity) {
     try {
-      let ethereum = window.ethereum;
 
-      if (ethereum) {
-        const provider = new ethers.providers.Web3Provider(window.ethereum);
+    //   First, I need to check if the ethereum chain is Goerli, the correct one.
+           
+       
+
+      if (window.ethereum) {
+        
+        let ethereum = window.ethereum; 
+         await checkChainIsCorrect();
+
+        const provider = new ethers.providers.Web3Provider(ethereum);
         const signer = provider.getSigner();
 
         const accounts = await ethereum.request({
           method: "eth_requestAccounts",
         });
 
+
         const usdToEthDone = await fetch("/api/getcryptoprice")
           .then((res) => res.json())
           .then((data) => {
             console.log(data);
-            let dividedQuantity = _quantity / data.ethereum.usd;
+            let dividedQuantity = (_quantity / data.ethereum.usd).toFixed(16);
             return dividedQuantity;
           })
           .catch((err) => console.error(err));
@@ -43,16 +72,26 @@ export const SendEthereum = () => {
           .catch((error) => console.error(error));
 
         console.log("tx:", tx);
+        transactionId = setTransactionId(tx);
       } else {
+        alert('You are not prepared for the Web3 world');
         console.log("Ethereum object doesn't exist!");
       }
+
     } catch (error) {
-      console.log(error);
+      console.log("Try, catch error =>", error);
     }
   }
 
   return (
     <div>
+      <button
+        onClick={async () => {
+          await sendButton(1);
+        }}
+      >
+        TEST WITH LESS ETHEREUM TO DELETE
+      </button>
       <button
         onClick={async () => {
           await sendButton(10);
@@ -74,6 +113,17 @@ export const SendEthereum = () => {
       >
         SEND 30$
       </button>
+
+      <p></p>
+      {transactionId ? (
+        <a
+          href={"https://goerli.etherscan.io/tx/" + transactionId.hash}
+        >
+          {transactionId.hash}
+        </a>
+      ) : (
+        ""
+      )}
     </div>
   );
 };
