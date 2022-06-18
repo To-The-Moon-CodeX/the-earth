@@ -8,17 +8,33 @@ export const Dashboard = () => {
   return (
     <section className={styles.dashboardC}>
       <div className={styles.dashboardC}>
-        <p className={styles.text}>tests</p>
+        <p>tests</p>
       </div>
       <div className={styles.dashboardC}>
-        <p className={styles.text}>tests</p>
+        <p>tests</p>
       </div>
       <div className={styles.dashboardC}>
-        <p className={styles.text}>tests</p>
+        <p>tests</p>
       </div>
       <div className={styles.dashboardC}>
-        <p className={styles.text}>tests</p>
+        <p>tests</p>
       </div>
     </section>
   )
 };
+/*
+import React from "react";
+import { AddressInfo } from "./AddressInfo";
+import { AddressTransactions } from "./AddressTransactions";
+import {SendEthereum} from "./SendEthereum"
+
+
+export const Dashboard = () => {
+  return (
+    <div>
+      <AddressInfo />
+      <AddressTransactions />
+      <SendEthereum/>
+    </div>
+  );
+  */

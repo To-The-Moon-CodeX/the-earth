@@ -22,7 +22,7 @@
 }
 
 .header a {
-  color: #fff3f2;
+  color: #9228b4;
   font-size: 1rem;
   font-family: "Joan", sans-serif;
 }
@@ -30,7 +30,7 @@
 .header a:hover,
 .header a:active,
 .header a.active {
-  color: lightgray;
+  color: lightpink;
 }
 
 @media (min-width: 768px) {
