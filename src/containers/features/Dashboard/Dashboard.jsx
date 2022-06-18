@@ -23,11 +23,6 @@ export const Dashboard = () => {
         <h1 className={styles.cardHeader}>Payment Value Options</h1>
         <SendEthereum />
       </div>
-      <div className={styles.dashboardCardItem}>
-        <div className={styles.balance}>
-          <AddressTransactions />
-        </div>
-      </div>
     </section>
   );
 };
