@@ -14,14 +14,16 @@
     "incremental": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "isolatedModules": false,
+    "isolatedModules": true,
     "moduleResolution": "Node",
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "resolveJsonModule": true
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "src/pages/sign-in/index.jsx"
   ],
   "exclude": [
     "node_modules"
