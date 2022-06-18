@@ -1,0 +1,31 @@
+.balanceCard {
+  background: #4FAF94;
+  border-radius: 20px;
+  border: 1px solid white;
+  width: 23.125rem;
+  height: 15.938rem;
+  padding-left: 15px;
+}
+
+.balanceContentsBottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.icon {
+  align-self: end;
+  padding: 10px;
+}
+
+.balanceContentsTop > h1{
+  color: white;
+}
+
+.balanceContentsTop > h3{
+  color: white;
+}
+
+.balanceContentsBottom > h4{
+  color: white;
+}

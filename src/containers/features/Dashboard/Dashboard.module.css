@@ -18,6 +18,14 @@
   color: white;
 }
 
+.balance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+}
+
 @media screen and (max-width: 800px) {
   .dashboardC {
     grid-template-columns: 1fr;
