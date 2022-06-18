@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { ethers } from "ethers";
+import styles from "./SendEthereum.module.css";
 
 
 export const SendEthereum = () => {
 
     const [transactionId, setTransactionId] = useState(null);
-    
+
     //Goerli test net chain
     const chainUsed = 5;
 
@@ -34,12 +35,12 @@ export const SendEthereum = () => {
     try {
 
     //   First, I need to check if the ethereum chain is Goerli, the correct one.
-           
-       
+
+
 
       if (window.ethereum) {
-        
-        let ethereum = window.ethereum; 
+
+        let ethereum = window.ethereum;
          await checkChainIsCorrect();
 
         const provider = new ethers.providers.Web3Provider(ethereum);
@@ -83,15 +84,17 @@ export const SendEthereum = () => {
   }
 
   return (
-    <div>
+    <div className={styles.container}>
       <button
+        className={styles.button}
         onClick={async () => {
           await sendButton(1);
         }}
       >
-        TEST WITH LESS ETHEREUM TO DELETE
+        SEND 5€
       </button>
       <button
+        className={styles.button}
         onClick={async () => {
           await sendButton(10);
         }}
@@ -99,6 +102,7 @@ export const SendEthereum = () => {
         SEND 10$
       </button>
       <button
+        className={styles.button}
         onClick={async () => {
           await sendButton(20);
         }}
@@ -106,6 +110,7 @@ export const SendEthereum = () => {
         SEND 20$
       </button>
       <button
+        className={styles.button}
         onClick={async () => {
           await sendButton(30);
         }}

@@ -1,16 +1,27 @@
 .dashboardC {
+  background-image: url("../../../../public/background.png");
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
-  margin-top: 3rem;
-
+  padding: 3rem 3rem;
 }
 
-.dashboardC > div {
+.dashboardCardItem {
   background: rgba(158, 151, 151, 0.25);
-  padding: 7.5rem 5rem;
-  border-radius: 1rem;
-  border: 1px solid rgb(17, 16, 16);
-  width: 75%;
-  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid white;
+  height: 18.75rem;
+}
+
+.cardHeader {
+  text-align: center;
+  color: white;
+}
+
+@media screen and (max-width: 800px) {
+  .dashboardC {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    padding: 3rem 3rem;
+  }
 }

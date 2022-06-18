@@ -3,7 +3,6 @@ import React from "react";
 import Image from "next/image";
 import styles from "./Dashboard.module.css";
 import { AddressInfo } from "./AddressInfo";
-import { Balance } from "../../../components";
 import { AddressTransactions } from "./AddressTransactions";
 import {SendEthereum} from "./SendEthereum"
 
@@ -11,23 +10,26 @@ export const Dashboard = () => {
   const router = useRouter();
   return (
     <section className={styles.dashboardC}>
-      <div>
-        <AddressInfo/>
+      <div className={styles.dashboardCardItem}>
+        <AddressInfo />
       </div>
-      <div>
-        <AddressTransactions/>
+      <div className={styles.dashboardCardItem}>
+        <AddressTransactions />
       </div>
-      <div>
+      <div className={styles.dashboardCardItem}>
+        <p>tests</p>
+      </div>
+      <div className={styles.dashboardCardItem}>
+        <h1 className={styles.cardHeader}>Payment Value Options</h1>
         <SendEthereum/>
       </div>
-      <div>
-      </div>
-    </section>
-  )
+      </section>
+  );
 };
 /*
+*/
+/*
 import React from "react";
-import { AddressInfo } from "./AddressInfo";
 import { AddressTransactions } from "./AddressTransactions";
 import {SendEthereum} from "./SendEthereum"
 
