@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.balanceCard {
+  background: #4faf94;
+  border-radius: 20px;
+  border: 1px solid white;
+  width: 23rem;
+  height: 14rem;
+  padding-left: 15px;
+}
+
+.balanceContentsBottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.icon {
+  align-self: end;
+  padding: 10px;
+}
+
+.texts > h4 {
+  color: rgb(250, 250, 250);
+}
+
+.balanceContentsTop > h1 {
+  color: white;
+}
+
+.balanceContentsTop > h3 {
+  color: white;
+}

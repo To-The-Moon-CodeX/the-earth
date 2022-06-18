@@ -1,0 +1,35 @@
+.dashboardC {
+  background-image: url("../../../../public/background.png");
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  padding: 3rem 3rem;
+}
+
+.dashboardCardItem {
+  background: rgba(158, 151, 151, 0.25);
+  border-radius: 5px;
+  border: 1px solid white;
+  height: 18.75rem;
+}
+
+.cardHeader {
+  text-align: center;
+  color: white;
+}
+
+.balance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+}
+
+@media screen and (max-width: 800px) {
+  .dashboardC {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    padding: 3rem 3rem;
+  }
+}

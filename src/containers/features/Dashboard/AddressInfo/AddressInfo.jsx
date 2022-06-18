@@ -1,9 +1,8 @@
-
 import React, { useEffect, useState } from "react";
-
+import styles from "./AddressInfo.module.css"
 export const AddressInfo = () => {
   const [data, setData] = useState(null);
-  console.log("🚀 ~ file: AddressInfo.jsx ~ line 6 ~ AddressInfo ~ data", data)
+  console.log("🚀 ~ file: AddressInfo.jsx ~ line 6 ~ AddressInfo ~ data", data);
   const [isLoading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -20,9 +19,12 @@ export const AddressInfo = () => {
   if (!data) return <p>No profile data</p>;
 
   return (
-    <div>
-      <p>{data.result}</p>
+    <div className={styles.container}>
+      <p className={styles.item}>{data.result}</p>
+      <p className={styles.item}>{data.result}</p>
+      <p className={styles.item}>{data.result}</p>
+
       {/* <p>{data.bio}</p> */}
     </div>
   );
-}
+};
