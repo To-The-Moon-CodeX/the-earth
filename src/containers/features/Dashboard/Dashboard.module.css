@@ -1,16 +1,15 @@
 .dashboardC {
+  background-image: url("../../../../public/background.png");
+  
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
   grid-gap: 2rem;
-  margin-top: 3rem;
+  padding: 3rem 3rem;
 }
 
-.dashboardC > div {
-  background: rgba(212, 130, 130, 0.51);
-  padding: 7.5rem 5rem;
-  border-radius: 2rem;
-  border: 1px solid transparent;
-  width: 75%;
-  margin: 0 auto;
+.dashboardCardItem {
+  background: rgba(158, 151, 151, 0.25);
+  border-radius: 5px;
+  border: 1px solid white;
+  height: 18.75rem;
 }
