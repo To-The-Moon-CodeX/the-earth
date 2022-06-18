@@ -2,22 +2,25 @@ import { useRouter } from "next/router";
 import React from "react";
 import Image from "next/image";
 import styles from "./Dashboard.module.css";
+import { AddressInfo } from "./AddressInfo";
+import { Balance } from "../../../components";
+import { AddressTransactions } from "./AddressTransactions";
+import {SendEthereum} from "./SendEthereum"
 
 export const Dashboard = () => {
   const router = useRouter();
   return (
     <section className={styles.dashboardC}>
-      <div className={styles.dashboardC}>
-        <p>tests</p>
+      <div>
+        <AddressInfo/>
       </div>
-      <div className={styles.dashboardC}>
-        <p>tests</p>
+      <div>
+        <AddressTransactions/>
       </div>
-      <div className={styles.dashboardC}>
-        <p>tests</p>
+      <div>
+        <SendEthereum/>
       </div>
-      <div className={styles.dashboardC}>
-        <p>tests</p>
+      <div>
       </div>
     </section>
   )
