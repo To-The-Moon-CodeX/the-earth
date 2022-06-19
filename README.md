@@ -48,13 +48,13 @@ The page open on http://localhost:3000
 * services: Communication with API
 * pages: main screens
 
-# Branch names
+### Branch names
 
 Example:
 `fix/button-component`
 `feature/add-favorites`
 
-# Pull Requests names and commit messages
+### Pull Requests names and commit messages
 
 
 Example:
@@ -67,4 +67,4 @@ Example without issue number:
 
 
 
-# [Link to server](https://github.com/To-The-Moon-CodeX/back-end)
+## [Link to server](https://github.com/To-The-Moon-CodeX/back-end)
