@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import styles from "./AddressInfo.module.css"
 
 import { Centered, Loader } from "../../../../components";
-import styles from "./AddressInfo.module.css";
 
 export const AddressInfo = () => {
   const [data, setData] = useState(null);
   const [isLoading, setLoading] = useState(false);
   const [userAddress, setUserAddress] = useState(null);
+  const [ethQuantity, setEthQuantity] = useState(null);
 
   async function getUserAddress() {
     let accounts = await ethereum.request({
@@ -25,7 +25,7 @@ export const AddressInfo = () => {
       fetch("/api/getaddressinfo?useradd=" + useradd)
         .then((res) => res.json())
         .then((data) => {
-          setEthQuantity(data);
+          ethQuantity = setEthQuantity(data);
           setLoading(false);
         });
     }
@@ -40,7 +40,7 @@ export const AddressInfo = () => {
       </Centered>
     );
     
-  if (!data)
+  if (!ethQuantity)
     return (
       <Centered>
         <h1>No profile data</h1>
