@@ -26,14 +26,12 @@ export default function useAuthenticate() {
   const sdk = useSDK();
   const domain = "localhost";
   const router = useRouter();
-  
-  // useEffect(() => {
-  //   if (localStorage.getItem("user_token")) {
-  //     router.push("/dashboard");
-  //     setUser(true);
-  //   }
-  // }, [router]);
 
+  useEffect(() => {
+    if (localStorage.getItem("user_token")) {
+      setUser(true);
+    }
+  }, [router]);
 
   const login = async () => {
     setIsLoading(true);
@@ -41,7 +39,7 @@ export default function useAuthenticate() {
       await connectWithMetamask();
       const payload = await sdk?.auth.login(domain);
       const res = await axios.post(sign_in_url, { payload });
-      console.log("🚀 ~ file: useAuthenticate.js ~ line 41 ~ login ~ res", res)
+      console.log("🚀 ~ file: useAuthenticate.js ~ line 41 ~ login ~ res", res);
       localStorage.setItem("user_token", res.data.message);
       router.push("/dashboard");
       setIsLoading(false);

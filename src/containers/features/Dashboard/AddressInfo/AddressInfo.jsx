@@ -21,6 +21,7 @@ export const AddressInfo = () => {
         <Loader />
       </Centered>
     );
+    
   if (!data)
     return (
       <Centered>

@@ -5,16 +5,12 @@ import styles from "./Navigation.module.css";
 import useAuthenticate from "../../../hooks/useAuthenticate";
 
 export const Navigation = () => {
-  const [user, setUser] = useState(null);
-  const { logout } = useAuthenticate();
+  const { logout, user } = useAuthenticate();
+  console.log("🚀 ~ file: Navigation.jsx ~ line 9 ~ Navigation ~ user", user)
 
   const handleSignOut = async () => {
     await logout();
   };
-
-  useEffect(() => {
-    setUser(localStorage.getItem("user_token"));
-  }, [setUser]);
 
   return (
     <header className={styles.header}>
