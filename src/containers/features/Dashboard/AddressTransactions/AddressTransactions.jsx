@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./AddressTransactions.module.css";
 import Image from "next/image";
-
+import { Centered, Loader } from "../../../../components";
 export const AddressTransactions = () => {
   const [data, setData] = useState(null);
   const [isLoading, setLoading] = useState(false);
@@ -16,8 +16,18 @@ export const AddressTransactions = () => {
       });
   }, []);
 
-  if (isLoading) return <p>Loading...</p>;
-  if (!data) return <p>No profile data</p>;
+  if (isLoading)
+    return (
+      <Centered>
+        <Loader />
+      </Centered>
+    );
+  if (!data)
+    return (
+      <Centered>
+        <h1>No profile data</h1>
+      </Centered>
+    );
 
   return (
     <div className={styles.container}>

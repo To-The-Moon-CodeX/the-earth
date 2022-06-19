@@ -44,6 +44,7 @@ export const TransactionHistory = () => {
 
   return (
     <div className={styles.tableContainer}>
+            <h1 className={styles.tableTitle}>Transaction history</h1>
       <table className={styles.container}>
         <thead>
           <tr>
