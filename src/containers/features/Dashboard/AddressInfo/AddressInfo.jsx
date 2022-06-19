@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import styles from "./AddressInfo.module.css"
+import { Centered, Loader } from "../../../../components";
+import styles from "./AddressInfo.module.css";
 export const AddressInfo = () => {
   const [data, setData] = useState(null);
   const [isLoading, setLoading] = useState(false);
@@ -14,8 +15,18 @@ export const AddressInfo = () => {
       });
   }, []);
 
-  if (isLoading) return <p>Loading...</p>;
-  if (!data) return <p>No profile data</p>;
+  if (isLoading)
+    return (
+      <Centered>
+        <Loader />
+      </Centered>
+    );
+  if (!data)
+    return (
+      <Centered>
+        <h1>No profile data</h1>
+      </Centered>
+    );
 
   return (
     <div className={styles.container}>
