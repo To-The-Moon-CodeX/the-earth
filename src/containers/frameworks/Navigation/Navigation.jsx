@@ -13,7 +13,7 @@ export const Navigation = () => {
   };
 
   useEffect(() => {
-    setUser(localStorage.getItem("user_token").toString());
+    setUser(localStorage.getItem("user_token"));
   }, [setUser]);
 
   return (
