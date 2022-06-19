@@ -1,3 +1,6 @@
+import { ethers } from 'ethers';
+
+
 async function handler(req, res) {
   if (req.method !== "GET") {
     return res.status(400).json({
@@ -13,7 +16,9 @@ async function handler(req, res) {
     });
   }
 
-  const userAddress = "0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae";
+  const userAddress = req.query.useradd;
+  // const userAddress = "0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae";
+
   let response = await fetch(
     "https://api-goerli.etherscan.io/api?module=account&action=balance&address=" +
       userAddress +
@@ -27,8 +32,10 @@ async function handler(req, res) {
     }
   );
   const data = await response.json();
-  console.log(data);
-  res.status(200).json(data);
+  
+  const parsedEth = ethers.utils.formatEther(data.result);
+  console.log(parsedEth);
+  res.status(200).json(parsedEth);
 }
 
 export default handler;

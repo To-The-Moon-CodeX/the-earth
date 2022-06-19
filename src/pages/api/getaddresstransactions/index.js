@@ -1,3 +1,7 @@
+
+
+
+
 async function handler(req, res) {
   if (req.method !== "GET") {
     return res.status(400).json({
@@ -13,7 +17,9 @@ async function handler(req, res) {
     });
   }
 
-  const userAddress = "0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae";
+  const userAddress = req.query.useradd;  
+  // const userAddress = "0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae";
+
   let response = await fetch(
     "https://api-goerli.etherscan.io/api?module=account&action=txlist&address=" +
       userAddress +

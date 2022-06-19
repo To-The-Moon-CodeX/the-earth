@@ -6,7 +6,6 @@ import styles from "./SendEthereum.module.css";
 export const SendEthereum = () => {
 
     const [transactionId, setTransactionId] = useState(null);
-
     //Goerli test net chain
     const chainUsed = 5;
 
@@ -85,7 +84,7 @@ export const SendEthereum = () => {
       <button
         className={styles.button}
         onClick={async () => {
-          await sendButton(1);
+          await sendButton(5);
         }}
       >
         SEND 5€
