@@ -2,7 +2,7 @@
 
 
 
-### ----Purpose and description  here----
+### Daily is a web application consolidating the customers' different exchange funds into one virtual wallet, and providing a means of payment for everyday use much like Apple Pay… But with crypto! The payments are processed in real-time into fiat currencies with the help of trading bots. This gives the user an ease of access to using their crypto without transferring it between exchanges or converting it to FIAT to make purchases.
 
 # Documentation
 
